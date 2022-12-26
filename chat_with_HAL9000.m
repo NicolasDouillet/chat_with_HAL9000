@@ -9,9 +9,6 @@ function [] = chat_with_HAL9000()
 % in the Preferences section of the command window (color, font).
 
 
-% + msg audio manquant portes
-
-
 clc;
 
 
