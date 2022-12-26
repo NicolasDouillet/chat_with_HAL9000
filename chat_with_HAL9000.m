@@ -1,12 +1,15 @@
 function [] = chat_with_HAL9000()
 %
-% Author : nicolas.douillet (at) free.fr, 2020-2021.
+% Author : nicolas.douillet (at) free.fr, 2020-2022.
 %
 %
 % This program clears your Matlab console and may also
 % change some of your Matlab preferences (font and background colors) if
 % interrupted while running. In case this happen you can easily set them back
 % in the Preferences section of the command window (color, font).
+
+
+% + msg audio manquant portes
 
 
 clc;
@@ -120,7 +123,7 @@ pause_duration = 0.45;
 while k < nb_max_sentences
     
     answer = input('>> ','s');
-    r = round(10*rand);
+    r = randi(10);
     
     switch r
         
